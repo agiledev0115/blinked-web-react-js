@@ -1,0 +1,62 @@
+.forgot-email-err {
+  color: #ff4554;
+  font-size: 12px;
+  font-weight: 100;
+  transition: all 0.2s;
+  font-family: var(--font-adineue-pro);
+}
+
+.otp-main {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-inter);
+  font-weight: bold;
+
+  > input {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    border: 1px solid #d8e0e7;
+    outline: none;
+    margin: 0 10px;
+    border-radius: 6px;
+
+    &:focus {
+      border: 2px solid #3842b0;
+    }
+
+    &.active {
+      border: 2px solid #3842b0;
+    }
+
+    &.otpError {
+      border: 2px solid #ff4554;
+    }
+  }
+}
+
+.passreset-success-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > div {
+    width: 72px;
+    height: 72px;
+    background: rgba(#3842b0, 0.1);
+    border-radius: 100%;
+
+    > img {
+      margin-top: 25%;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .otp-main {
+    > input {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

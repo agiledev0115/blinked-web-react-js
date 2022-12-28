@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "agentName": "Goodness Chiesom",
+        "location": "Agent Current Location",
+        "revenue": "5000",
+        "orders": 5,
+        "status": "Available"
+    },
+    {
+        "id": 2,
+        "agentName": "Another Agent",
+        "location": "Agent Current Location",
+        "revenue": "5000",
+        "orders": 5,
+        "status": "Available"
+    },
+    {
+        "id": 3,
+        "agentName": "Mikky Brasi",
+        "location": "Agent Current Location",
+        "revenue": "5000",
+        "orders": 5,
+        "status": "Available"
+    },
+    {
+        "id": 4,
+        "agentName": "Great Agent",
+        "location": "Agent Current Location",
+        "revenue": "5000",
+        "orders": 5,
+        "status": "Working"
+    }
+]

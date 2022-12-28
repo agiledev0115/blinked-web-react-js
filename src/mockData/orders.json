@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Mikky Brasi",
+    "from": "Isolo Store",
+    "to": "Ikeja Allen Lagos",
+    "price": "1904",
+    "status": "Delivered",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Tajao Bullaha",
+    "from": "Isolo Store",
+    "to": "Ikeja Allen Lagos",
+    "price": "1904",
+    "status": "New",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "Searching try",
+    "from": "Isolo Store",
+    "to": "Ikeja Allen Lagos",
+    "price": "1904",
+    "status": "Enroute Dropoff",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "Tajao Bullaha",
+    "from": "Isolo Store",
+    "to": "Ikeja Allen Lagos",
+    "price": "1904",
+    "status": "Enroute Pickup",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "Tajao Bullaha",
+    "from": "Isolo Store",
+    "to": "Ikeja Allen Lagos",
+    "price": "1904",
+    "status": "Cancelled",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "Tajao Bullaha",
+    "from": "Isolo Store",
+    "to": "Ikeja Allen Lagos",
+    "price": "1904",
+    "status": "Assigned",
+    "image": ""
+  }
+]

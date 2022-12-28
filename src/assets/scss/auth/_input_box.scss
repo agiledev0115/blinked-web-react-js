@@ -1,0 +1,84 @@
+.auth-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-box {
+  height: 56px;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.2s;
+  border: 1px solid #e1e1eb;
+  padding: 10px 20px;
+  border-radius: 6px;
+  position: relative;
+  font-family: var(--font-adineue-pro);
+
+  > div {
+    position: absolute;
+    right: 7px;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    // background: red;
+  }
+
+  > label {
+    position: absolute;
+    text-align: left;
+    top: 30%;
+    // background: yellow;
+    transition: all 0.2s;
+    font-size: 16px;
+    color: #9395b4;
+  }
+
+  > input {
+    width: 100%;
+    border: none;
+    z-index: 1;
+    height: 100%;
+    transition: all 0.2s;
+    background: none;
+    border: none;
+    outline: none;
+    color: #0f112b;
+    font-size: 16px;
+
+    &:focus {
+      border: none;
+      background: none;
+    }
+  }
+
+  &.active {
+    border: 1px solid #3842b0;
+
+    > label {
+      top: 10%;
+      font-size: 12px;
+      color: #5a5d82;
+    }
+
+    > input {
+      height: 50%;
+    }
+  }
+
+  &.forgot-email-border {
+    border: 1px solid red;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .input-box {
+    padding: 2px 10px;
+    border-radius: 6px;
+    position: relative;
+    font-family: var(--font-adineue-pro);
+  }
+}

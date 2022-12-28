@@ -1,0 +1,82 @@
+[
+    {
+        "id" : 1,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": true
+    },
+    {
+        "id" : 2,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": true
+    },
+    {
+        "id" : 3,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": true
+    },
+    {
+        "id" : 4,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": false
+    },
+    {
+        "id" : 5,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": false
+    },
+    {
+        "id" : 6,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": false
+    },
+    {
+        "id" : 7,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": true
+    },
+    {
+        "id" : 8,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": false
+    },
+    {
+        "id" : 9,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": false
+    },
+    {
+        "id" : 10,
+        "name": "Tajao Bullaha",
+        "role": "Admin",
+        "balance": 850000,
+        "orders": 20,
+        "isActive": true
+    }
+]

@@ -1,0 +1,38 @@
+.footer-main {
+  font-size: 14px;
+  width: 49.65%;
+  color: #5a5d82;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-adineue-pro);
+  padding-bottom: 76px;
+  margin-top: 24px;
+
+  > .footer-contant-a {
+    color: #5a5d82;
+    > span {
+      cursor: pointer;
+      color: #3842b0;
+    }
+  }
+  
+  > .footer-contant-b {
+    display: flex;
+
+    > div:nth-child(1) {
+      cursor: pointer;
+    }
+
+    > div:nth-child(3) {
+      cursor: pointer;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 991px) {
+  .footer-main {
+    width: auto;
+    display: block;
+  }
+}

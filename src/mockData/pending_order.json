@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Tajao Bullaha",
+        "from": "Isolo Store",
+        "to": "Ikeja Allen Lagos",
+        "price": "1904",
+        "status": "New"
+    },
+    {
+        "id": 2,
+        "name": "Tajao Bullaha",
+        "from": "Isolo Store",
+        "to": "Ikeja Allen Lagos",
+        "price": "1904",
+        "status": "Enroute Dropoff"
+    },
+    {
+        "id": 3,
+        "name": "Tajao Bullaha",
+        "from": "Isolo Store",
+        "to": "Ikeja Allen Lagos",
+        "price": "1904",
+        "status": "Assigned"
+    },
+    {
+        "id": 4,
+        "name": "Tajao Bullaha",
+        "from": "Isolo Store",
+        "to": "Ikeja Allen Lagos",
+        "price": "1904",
+        "status": "Enroute Dropoff"
+    },
+    {
+        "id": 5,
+        "name": "Tajao Bullaha",
+        "from": "Isolo Store",
+        "to": "Ikeja Allen Lagos",
+        "price": "1904",
+        "status": "New"
+    },
+    {
+        "id": 6,
+        "name": "Tajao Bullaha",
+        "from": "Isolo Store",
+        "to": "Ikeja Allen Lagos",
+        "price": "1904",
+        "status": "Assigned"
+    }
+]

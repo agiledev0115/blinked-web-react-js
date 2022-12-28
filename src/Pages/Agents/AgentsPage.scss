@@ -1,0 +1,170 @@
+.agent-dropdown {
+    top: -20px;
+    left: -220px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 12px;
+    border: 1px solid #efeff3;
+    z-index: 1000;
+    padding: 8px;
+    min-width: 200px;
+    box-shadow: 1px 2px 5px #727e8f;
+
+    a {
+        border-radius: 12px;
+        transition: all 0.3s;
+        &:hover {
+            background: #eff0f9;
+        }
+    }
+}
+
+.agent-action-modal {
+    padding: 32px;
+    .modal-content {
+        max-width: 715px;
+        margin: 0 auto;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 32px;
+        .close {
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            background: rgba(56, 66, 176, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            color: #3842b0;
+        }
+    }
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+    }
+    .body {
+        padding: 24px 32px;
+        .subtitle {
+            color: #0e0842;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 12px;
+        }
+        .text {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.004em;
+            color: #5a5d82;
+            margin-bottom: 28px;
+        }
+        .form {
+            margin-bottom: 24px;
+            .image-label {
+                color: #0e0842;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .rounded-pill {
+                font-size: 12px;
+            }
+            .image-container {
+                display: flex;
+                align-items: flex-start;
+                .bg {
+                    width: 72px;
+                    height: 72px;
+                    background: #acaded;
+                    border-radius: 9999px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 24px;
+                    margin-right: 32px;
+                    input.hidden {
+                        display: none;
+                    }
+                }
+                img.img {
+                    max-width: 72px;
+                    max-height: 72px;
+                    border-radius: 9999px;
+                }
+                button.photo-btn {
+                    display: flex;
+                    justify-content: center;
+                    padding: 12px 32px;
+                    border-radius: 7px;
+                    border: none;
+                    margin: 0;
+                    margin-top: 20px;
+                    background: #f5f5f7;
+                }
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                .group {
+                    width: 48%;
+                }
+            }
+            .group {
+                padding: 0;
+                position: relative;
+            }
+            label.label {
+                position: absolute;
+                left: 20px;
+                top: 8px;
+                font-size: 12px;
+                line-height: 20px;
+                color: #5a5d82;
+                transition: all 0.2s ease-in-out;
+            }
+            input.input {
+                border: 1px solid #d8e0e7;
+                border-radius: 6px;
+                margin-bottom: 32px;
+                padding: 16px 20px;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.04em;
+                color: #9395b4;
+                width: 100%;
+                transition: all 0.2s ease-in-out;
+                &:focus {
+                    border: 1px solid #3842b0;
+                    padding: 24px 20px 8px;
+                }
+                &:not([value=""]) {
+                    padding: 24px 20px 8px;
+                }
+            }
+        }
+    }
+    .footer {
+        padding: 20px 32px;
+        button {
+            display: flex;
+            justify-content: center;
+            padding: 12px 32px;
+            border-radius: 7px;
+            border: none;
+            margin: 0;
+        }
+        .cancel {
+            background: #f5f5f7;
+        }
+        .submit {
+            margin-left: 16px;
+        }
+    }
+}

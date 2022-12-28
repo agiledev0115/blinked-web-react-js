@@ -1,0 +1,232 @@
+.signin-comp-a {
+  background: #fff;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.signin-comp-b {
+  background: #f8f8ff;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+
+  > div:nth-child(1) {
+    position: relative;
+
+    > div:nth-child(1) {
+      position: absolute;
+      right: 0;
+      top: 20%;
+    }
+  }
+
+  .signin-comp-b-title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 44px;
+    font-family: var(--font-gt-walsheim-pro);
+  }
+
+  .signin-comp-b-desc {
+    font-size: 16px;
+    font-weight: normal;
+    color: #0f113b;
+    opacity: 0.8;
+    font-family: var(--font-adineue-pro);
+  }
+}
+
+.signin-vector {
+  position: relative;
+  margin-top: 40%;
+  display: flex;
+  justify-content: center;
+
+  > div:nth-child(1) {
+    z-index: 5;
+  }
+
+  > div:nth-child(2) {
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    top: -8%;
+    right: 15%;
+    // opacity: 0.2;
+  }
+
+  > div:nth-child(3) {
+    position: absolute;
+    width: 44px;
+    height: 45px;
+    top: -15%;
+    left: 30%;
+    // right: 15%;
+    // opacity: 0.2;
+  }
+
+  > div:nth-child(4) {
+    position: absolute;
+    width: 44px;
+    height: 45px;
+    top: 20%;
+    left: 0;
+
+    // right: 15%;
+    // opacity: 0.2;
+  }
+  > div:nth-child(5) {
+    position: absolute;
+    width: 44px;
+    height: 45px;
+    top: -50%;
+    right: 30%;
+
+    // right: 15%;
+    // opacity: 0.2;
+  }
+}
+
+.signin-title {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  font-family: var(--font-gt-walsheim-pro);
+}
+
+.signin-subcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin-top: 25px;
+
+  > div {
+    // background: rgb(117, 169, 247);
+    width: 66.745%;
+  }
+
+  .signin-with-google {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--font-adineue-pro);
+
+    > div {
+      position: absolute;
+      height: 42px;
+      width: 42px;
+      background: #fff;
+      margin-left: 8px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    > button {
+      background: rgba(#3842b0, 0.1);
+      border: none;
+      color: #3842b0;
+      font-size: 16px;
+      font-weight: bold;
+      height: 56px;
+      border-radius: 8px;
+    }
+  }
+
+  .signin-with-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5a5d82;
+    font-family: var(--font-adineue-pro);
+    font-size: 14px;
+    margin-top: 32px;
+    > div:nth-child(1),
+    > div:nth-child(3) {
+      width: 64px;
+      height: 1px;
+      background: rgba(#9395b4, 0.16);
+    }
+  }
+
+  .signin-with-email-btn {
+    margin-top: 40px;
+    font-family: var(--font-adineue-pro);
+    
+    > button {
+      background: #3842b0;
+      color: #fff;
+      height: 56px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  .signin-forgot-password {
+    margin-top: 36px;
+    cursor: pointer;
+    color: #3842b0;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: underline;
+    font-family: var(--font-adineue-pro);
+  }
+
+  .signin-create-ac {
+    font-size: 14px;
+    font-family: var(--font-adineue-pro);
+    color: #5a7184;
+
+    > span {
+      cursor: pointer;
+      color: #3842b0;
+      text-decoration: underline;
+    }
+  }
+}
+
+.signin-footer {
+  display: flex;
+  justify-content: center;
+  // height: 35px;
+  margin-top: 10%;
+  font-family: var(--font-adineue-pro);
+  color: #5a5d82;
+  font-size: 14px;
+
+  > div {
+    padding: 0 12px;
+    cursor: pointer;
+
+    &:nth-child(2) {
+      border-left: 1px solid #5a5d82;
+      border-right: 1px solid #5a5d82;
+    }
+  }
+}
+.auth-input-container{
+  margin-top: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .signin-subcontainer {
+    > div {
+      width: auto;
+    }
+
+    .signin-with-google {
+      width: auto;
+      width: 100%;
+    }
+
+    .signin-with-email-btn {
+      width: auto;
+      width: 100%;
+    }
+  }
+}

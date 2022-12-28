@@ -1,0 +1,451 @@
+.settings-container {
+  background: #fff;
+  border: 1px solid #ecebf5;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.settings-menu-container {
+  border-right: 1px solid #ecebf5;
+  width: 20%;
+  display: flex;
+
+  > ul {
+    margin-top: 40px;
+    list-style: none;
+    padding-left: 0;
+
+    > li {
+      font-size: 14px;
+      font-weight: normal;
+      color: #5a5d82;
+      padding: 15px 70px 15px 20px;
+      transition: all 0.1s linear;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      cursor: pointer;
+      font-family: var(--font-adineue-pro);
+
+      &.active {
+        border-left: 3px solid #3842b0;
+        background: rgba(#3842b0, 0.05);
+        font-weight: 700;
+        color: #3842b0;
+      }
+
+      &:hover {
+        border-left: 3px solid #3842b0;
+        background: rgba(#3842b0, 0.05);
+        font-weight: 700;
+        color: #3842b0;
+      }
+
+      //   &:hover {
+      //   border-left: 3px solid #3842B0;
+      //   background: rgba(#3842B0, 0.05);
+      //   fonts-weight: bold;
+      //   color: #3842B0;
+      //   }
+    }
+  }
+}
+
+.settings-form-container {
+  width: 60%;
+  padding: 0 50px;
+
+  > .setting-user-profile {
+    margin-top: 40px;
+  }
+
+  .setting-user-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #0f112b;
+    font-family: var(--font-gt-walsheim-pro);
+  }
+
+  .setting-user-picture {
+    display: flex;
+    align-items: center;
+
+    > div:nth-child(1) {
+      width: 88px;
+      height: 88px;
+      border-radius: 100%;
+      background: #5a5d82;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
+
+.setting-edit-picture-btn {
+  font-family: var(--font-gt-walsheim-pro);
+
+  > button {
+    padding: 10px 16px;
+    background: none;
+    border: 1px solid #3842b0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #3842b0;
+    border-radius: 8px;
+  }
+}
+
+.settings-user-form-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #183b56;
+  font-family: var(--font-gt-walsheim-pro);
+}
+
+.settings-user-form-subline {
+  font-size: 14px;
+  color: #5a5d82;
+  font-family: var(--font-adineue-pro);
+}
+
+.settings-user-form-action-btn {
+  font-family: var(--font-gt-walsheim-pro);
+
+  > button {
+    padding: 10px 25px;
+
+    &:nth-child(1) {
+      border: none;
+      background: #f5f5f7;
+      border-radius: 7px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #5a5d82;
+      margin-right: 20px;
+    }
+
+    &:nth-child(2) {
+      border: none;
+      background: #3842b0;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+}
+
+hr {
+  border: 1px solid #d9d8db;
+}
+
+.settings-danger {
+  font-weight: 500;
+  font-size: 20px;
+  color: #e22738;
+  font-family: var(--font-gt-walsheim-pro);
+}
+
+.settings-danger-desc {
+  font-size: 14px;
+  color: #5a5d82;
+  font-family: var(--font-adineue-pro);
+}
+
+.settings-deactive-user-btn {
+  background: #f5f5f7;
+  border-radius: 7px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #5a5d82;
+  font-family: var(--font-adineue-pro);
+}
+
+.settings-menu-responsive-container {
+  display: none;
+}
+
+.settings-change-pass-main {
+  height: 80vh;
+}
+
+.settings-team-search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: var(--font-inter);
+
+  > span {
+    position: absolute;
+    left: 10px;
+  }
+
+  > input {
+    border: 1px solid #ecebf5;
+    padding: 0 15px 0 30px;
+    border-radius: 8px;
+    height: 38px;
+    color: #9395b4;
+    width: 220px;
+  }
+}
+
+.settings-team-filter {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: var(--font-gt-walsheim-pro);
+
+  > button {
+    border: none;
+    background: #f5f5f7;
+    border-radius: 6px;
+    height: 38px;
+    width: 180px;
+    color: #5a5d82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      margin-right: 10px;
+      width: 14px;
+    }
+  }
+}
+
+.settings-team-list-container {
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    height: auto;
+
+    tr {
+      border-bottom: 2px solid rgba(#9395b4, 0.06);
+
+      > th {
+        padding: 15px 18px;
+        background: rgba(#9395b4, 0.06);
+        font-size: 12px;
+        color: #5a5d82;
+        font-family: var(--font-gt-walsheim-pro);
+      }
+
+      > td {
+        padding: 15px 18px;
+        color: #0f112b;
+        font-size: 14px;
+
+        &:nth-child(1) {
+          font-family: var(--font-gt-walsheim-pro);
+        }
+
+        &:nth-last-child(2) {
+          width: 250px;
+          font-family: var(--font-gt-walsheim-pro);
+        }
+
+        &:nth-last-child(3),
+        &:nth-last-child(4) {
+          font-family: var(--font-inter);
+        }
+
+        &:nth-last-child(1) {
+          width: 80px;
+        }
+      }
+
+      .home-pending-order-list-status {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.setting-team-pagination-container {
+  color: #92929d;
+  font-size: 25px;
+
+  > div:nth-child(1) {
+    font-size: 14px;
+    color: #637381;
+    font-weight: var(--font-adineue-pro);
+  }
+
+  > div:nth-child(2) {
+    display: flex;
+    font-size: 14px;
+    color: #637381;
+    font-weight: var(--font-adineue-pro);
+
+    > div:nth-child(2) {
+      height: 35px;
+      border: 1px solid #e2e2ea;
+      border-radius: 10px;
+      margin-left: 15px;
+
+      > input {
+        //   width: 30px;
+        min-width: 30px;
+        max-width: 30px;
+        outline: none;
+        background: none;
+        border: none;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-left: 1px solid #e2e2ea;
+        width: 18px;
+      }
+    }
+  }
+
+  .order-prev,
+  .order-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 28px;
+    height: 35px;
+    border: 1px solid #e2e2ea;
+    border-radius: 10px;
+  }
+
+  .order-page {
+    > span {
+      cursor: pointer;
+      font-weight: 400;
+      margin: 0 8px;
+      transition: all 0.2s;
+
+      &.active {
+        font-weight: 700;
+        color: #3842b0;
+      }
+
+      &:hover {
+        font-weight: 700;
+        color: #3842b0;
+      }
+    }
+  }
+}
+
+.setting-team-action {
+  position: relative;
+  // width: 100px;
+  cursor: pointer;
+
+  // > div {
+
+  //   > ul {
+  //     position: absolute;
+  //     left: -100px;
+  //     // left: 0;
+  //     width: 150px;
+  //     // height: 40px;
+  //     background: #fff;
+  //     border-radius: 10px;
+  //     z-index: 5;
+  //     list-style: none;
+  //     padding-top: 20px;
+  //     padding-left: 10px;
+  //     fonts-size: 14px;
+  //     line-height: 24px;
+  //     color: #5A5D82;
+
+  //     > li {
+  //       cursor: pointer;
+  //       padding: 10px 10px;
+  //     }
+  //   }
+  // }
+}
+// @media only screen and (max-width: 991px) {
+// }
+
+@media only screen and (max-width: 1300px) {
+  .settings-container {
+    background: #fff;
+    border: 1px solid #ecebf5;
+    display: block;
+  }
+
+  .settings-change-pass-main {
+    height: auto;
+  }
+  .settings-form-container {
+    width: 100%;
+    padding: 0 20px;
+
+    > .setting-user-profile {
+      margin-top: 0;
+    }
+  }
+
+  .settings-menu-container {
+    width: 100%;
+
+    > ul {
+      display: none;
+      overflow: hidden;
+    }
+  }
+
+  .settings-menu-responsive-container {
+    // display: flex;
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    // box-shadow: 0 0 10px #eee;
+    transition: all 0.2s linear;
+
+    > ul {
+      margin-top: 0px;
+      list-style: none;
+      padding-left: 0;
+
+      > li {
+        font-size: 14px;
+        font-weight: normal;
+        color: #5a5d82;
+        padding: 15px 70px 15px 20px;
+        transition: all 0.1s linear;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        cursor: pointer;
+
+        &.active {
+          border-left: 3px solid #3842b0;
+          background: rgba(#3842b0, 0.05);
+          font-weight: bold;
+          color: #3842b0;
+        }
+
+        //   &:hover {
+        //   border-left: 3px solid #3842B0;
+        //   background: rgba(#3842B0, 0.05);
+        //   fonts-weight: bold;
+        //   color: #3842B0;
+        //   }
+      }
+    }
+  }
+
+  .settings-team-filter {
+    margin-left: 0;
+  }
+}

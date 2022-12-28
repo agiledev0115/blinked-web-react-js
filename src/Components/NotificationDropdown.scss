@@ -1,0 +1,58 @@
+.notification-dropdown {
+    img.bell {
+        cursor: pointer
+    }
+    .body {
+        min-height: 592px;
+        width: 440px;
+        background: #ffffff;
+        border: 1px solid #ecebf5;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        .header {
+            font-size: 22px;
+            line-height: 24px;
+            letter-spacing: 0.004em;
+            color: #0e0842;
+            padding: 24px 32px;
+            border: 1px solid #ECEBF5;
+            width: 100%;
+            h4 {
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+        img.image {
+            margin-top: 90px;
+        }
+        p.text {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.002em;
+            color: #0f112b;
+            margin-top: 48px;
+            margin-bottom: 6px;
+        }
+        p.subtext {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.004em;
+            color: #9395b4;
+        }
+    }
+    @media all and (max-width: 500px) {
+        .body {
+            width: 90vw;
+            .header {
+                padding: 16px
+            }
+        }
+    }
+}

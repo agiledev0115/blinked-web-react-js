@@ -1,0 +1,44 @@
+div.toast {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    top: 64px;
+    padding: 16px;
+    width: 360px;
+    border-radius: 8px;
+    left: calc(50% - 180px);
+    .image-bg {
+        background-color: #288f40;
+        width: 32px;
+        height: 32px;
+        margin-right: 24px;
+        border-radius: 9999px;
+        position: relative;
+        img {
+            &:nth-child(1) {
+                position: absolute;
+                left: 8px;
+                top: 13px;
+            }
+            &:nth-child(2) {
+                position: absolute;
+                right: 8px;
+                top: 10px;
+            }
+        }
+    }
+    p {
+        color: #4A5361;
+        letter-spacing: 0.004em;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0;
+        flex-grow: 1;
+    }
+}
+
+div.toast.open {
+    display: flex;
+}

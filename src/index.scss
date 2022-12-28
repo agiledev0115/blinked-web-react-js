@@ -1,0 +1,144 @@
+@font-face {
+    font-family: GT Walsheim PRO;
+    // src: url('./assets/TYPOGRAPHY/GT Walsheim Pro/GTWalsheimPro-Black.ttf');
+    // src: url('./assets/TYPOGRAPHY/GT Walsheim Pro/GTWalsheimPro-Bold.ttf');
+    // src: url('./assets/TYPOGRAPHY/GT Walsheim Pro/GTWalsheimPro-Light.ttf');
+    // src: url('./assets/TYPOGRAPHY/GT Walsheim Pro/GTWalsheimPro-Medium.ttf');
+    // src: url('./assets/TYPOGRAPHY/GT Walsheim Pro/GTWalsheimPro-Regular.ttf');
+    // src: url('./assets/TYPOGRAPHY/GT Walsheim Pro/GTWalsheimPro-Thin.ttf');
+    src: url('./assets/TYPOGRAPHY/adineue PRO/adineue PRO Bold Web Regular.ttf');
+    src: url('./assets/TYPOGRAPHY/adineue PRO/adineue PRO Bold.ttf');
+    src: url('./assets/TYPOGRAPHY/adineue PRO/adineue PRO KZ Bold.ttf');
+    src: url('./assets/TYPOGRAPHY/adineue PRO/adineue PRO KZ Light.ttf');
+    src: url('./assets/TYPOGRAPHY/adineue PRO/adineue PRO.ttf');
+ }
+
+ body {
+     width: 100%;
+ }
+
+.auth-main {
+  background: url(./assets/img/background.png);
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-cmn-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .auth-cmn-subcontainer {
+    width: 49.65%;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+  }
+}
+
+.auth-cmn-title {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: var(--font-gt-walsheim-pro);
+}
+
+.auth-cmn-subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 15px;
+  font-family: var(--font-adineue-pro);
+  color: #5a5d82;
+}
+
+.auth-cmn-btn {
+  > button {
+    font-family: var(--font-adineue-pro);
+    background: #3842b0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 2px solid #3842b0;
+    height: 60px;
+  }
+}
+
+.auth-cmn-signin {
+  font-size: 14px;
+  font-family: var(--font-adineue-pro);
+  color: #5a5d82;
+  letter-spacing: 0.03em;
+
+  > span {
+    cursor: pointer;
+    color: #3842b0;
+    font-weight: bold;
+    font-family: var(--font-adineue-pro);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .auth-cmn-main {
+    > .auth-cmn-subcontainer {
+      width: 100% !important;
+    }
+  }
+}
+
+.gm-svpc,
+.gm-style-mtc,
+.gmnoprint,
+.gm-fullscreen-control,
+.gm-style-cc {
+  display: none;
+}
+
+.gm-style > div:nth-last-child(3) img {
+  display: none;
+}
+
+.google-map-controller-main {
+  position: absolute;
+  // width: 44px;
+  // height: 55px;
+  background: #fff;
+  z-index: 4;
+  bottom: 0;
+  right: 0;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 0 15px 25px 0;
+
+  > button {
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    background: #f5f5f7;
+    border-radius: 5.25px;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4f4999;
+  }
+
+  > .google-map-controller-btn:hover {
+    background: #3842b0;
+    color: #fff;
+  }
+
+  .google-controller-line {
+    margin: 5px 0;
+    background: #dfe5ed;
+    height: 1px !important;
+  }
+}
