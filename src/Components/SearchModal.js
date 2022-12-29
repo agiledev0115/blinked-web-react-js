@@ -7,6 +7,7 @@ import moment from 'moment';
 import { History } from "../assets/img";
 
 import { ImSearch } from "react-icons/im";
+import history from '../mockData/recentSearch.json'
 
 export default function FeedbackModal({ show, setShow }) {
 
@@ -23,30 +24,12 @@ export default function FeedbackModal({ show, setShow }) {
             <div className='my-4 mx-2 dashboard-search-history'>
                 <span className='mx-1'>RECENT SEARCHES</span>
                 <ul className='mt-2'>
-                    <li className='p-1 pr-0'>
-                        <img src={History} alt="history" />
-                        <span className='mx-3'>Form Builder - 23 hours on-demand video</span>
-                    </li>
-                    <li className='p-1 pr-0'>
-                        <img src={History} alt="history" />
-                        <span className='mx-3'>Access Mosaic on mobile and TV</span>
-                    </li>
-                    <li className='p-1 pr-0'>
-                        <img src={History} alt="history" />
-                        <span className='mx-3'>Product Update - Q4 2021</span>
-                    </li>
-                    <li className='p-1 pr-0'>
-                        <img src={History} alt="history" />
-                        <span className='mx-3'>Master Digital Marketing Strategy course</span>
-                    </li>
-                    <li className='p-1 pr-0'>
-                        <img src={History} alt="history" />
-                        <span className='mx-3'>Dedicated forms for products</span>
-                    </li>
-                    <li className='p-1 pr-0'>
-                        <img src={History} alt="history" />
-                        <span className='mx-3'>Product Update - Q4 2021</span>
-                    </li>
+                    {history.map(data => (
+                        <li className='p-1 pr-0' key={data.id}>
+                            <img src={History} alt="history" />
+                            <span className='mx-3'>{data.string}</span>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </Modal>

@@ -515,6 +515,7 @@
 .popover{
   border: none;
   box-shadow: 1px 2px 5px #727e8f;
+  
   .arrow{
       background:transparent !important;
       z-index: 99;
@@ -525,4 +526,32 @@
       border-top: 7px solid white;
       bottom: -7px;
   }
+
+  .home-agent-type {
+    font-size: 12px;
+  }
+}
+
+.home-agent-text-grey {
+  font-size: 16px;
+  font-weight: bold;
+  color: #5a5d82;
+}
+
+.home-agent-text-pink {
+  color: #ff4554;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.home-agent-text-green {
+  color: #288f40;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.home-agent-text-blue {
+  color: #1752ff;
+  font-size: 16px;
+  font-weight: bold;
 }

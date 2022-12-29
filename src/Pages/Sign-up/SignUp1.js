@@ -3,7 +3,8 @@ import { useHistory } from "react-router-dom";
 import validator from "validator";
 // Assets
 import { validemail } from "../../assets/img";
-import { logo, eye, hiddenEye } from "../../assets/img";
+import { eye, hiddenEye } from "../../assets/img";
+import bLinkedLogo from '../../assets/landing/bLinkedLogo.svg';
 // Components
 import Footer from "../../Components/Footer";
 
@@ -80,7 +81,7 @@ const SignUpPage1 = () => {
     return (
         <div className="auth-main">
             <div className="container auth-cmn-main">
-                <img src={logo} alt="Logo" className="img-fluid my-5" />
+                <img src={bLinkedLogo} alt="Logo" className="img-fluid" style={{maxHeight: '150px'}}/>
                 <div className="auth-cmn-subcontainer px-md-5 py-5">
                     <div className="auth-cmn-title">Let’s get you started 👇🏽</div>
                     <div className="auth-cmn-subtitle">

@@ -110,9 +110,9 @@ const MapComponent = (props) => {
                             <OverlayTrigger
                                 placement="top"
                                 overlay={
-                                    <Popover className='py-2 px-2 text-center text-20'>
-                                        <span className='d-block font-weight-bold mb-1'>Inactive Agents</span>
-                                        <span className='font-weight-bold'>300</span>
+                                    <Popover className='py-2 px-3 text-center text-20'>
+                                        <span className='d-block mb-1 home-agent-type'>Inactive Agents</span>
+                                        <span className='home-agent-text-grey'>300</span>
                                     </Popover>
                                 }
                             >
@@ -124,9 +124,9 @@ const MapComponent = (props) => {
                             <OverlayTrigger
                                 placement="top"
                                 overlay={
-                                    <Popover className='py-2 px-2 text-center text-16'>
-                                        <span className='d-block font-weight-bold mb-1'>Unavailable Agents</span>
-                                        <span className='font-weight-bold'>130</span>
+                                    <Popover className='py-2 px-3 text-center text-16'>
+                                        <span className='d-block mb-1 home-agent-type'>Unavailable Agents</span>
+                                        <span className='home-agent-text-pink'>130</span>
                                     </Popover>
                                 }
                             >
@@ -140,9 +140,9 @@ const MapComponent = (props) => {
                             <OverlayTrigger
                                 placement="top"
                                 overlay={
-                                    <Popover className='py-2 px-2 text-center text-16'>
-                                        <span className='d-block font-weight-bold mb-1'>Available Agents</span>
-                                        <span className='font-weight-bold'>500</span>
+                                    <Popover className='py-2 px-3 text-center text-16'>
+                                        <span className='d-block mb-1 home-agent-type'>Available Agents</span>
+                                        <span className='home-agent-text-green'>500</span>
                                     </Popover>
                                 }
                             >
@@ -154,16 +154,16 @@ const MapComponent = (props) => {
                             <OverlayTrigger
                                 placement="top"
                                 overlay={
-                                    <Popover className='py-2 px-2 text-center text-16'>
-                                        <span className='d-block font-weight-bold mb-1'>Active Agents</span>
-                                        <span className='font-weight-bold'>100</span>
+                                    <Popover className='py-2 px-3 text-center text-16'>
+                                        <span className='d-block mb-1 home-agent-type'>Active Agents</span>
+                                        <span className='home-agent-text-blue'>100</span>
                                     </Popover>
                                 }
                             >
-                                <div>
-                                    <span>100</span>
-                                    <span>Active</span>
-                                </div>
+                            <div>
+                                <span>100</span>
+                                <span>Active</span>
+                            </div>
                             </OverlayTrigger>
                         </div>
                     </div>

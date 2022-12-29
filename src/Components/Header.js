@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 import { GoChevronDown } from "react-icons/go";
 import { CgMenuLeftAlt } from "react-icons/cg";
-import { ImSearch } from "react-icons/im";
 import { Dropdown } from "react-bootstrap";
 
 import { notificationIcon } from "../assets/img";
 import NotificationDropdown from "./NotificationDropdown";
+import { ImSearch } from "react-icons/im";
 import SearchModal from "../Components/SearchModal";
 
 const Header = ({ handleSideBar, title }) => {
-    const [show, setShow] = useState(false);
     const history = useHistory();
+    const [show, setShow] = useState(false);
 
     const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
         <span ref={ref}

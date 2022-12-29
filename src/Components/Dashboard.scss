@@ -274,10 +274,6 @@
     }
   }
 
-  .drop-menu-date {
-    width: 100%;
-  }
-
   .dashboard-date {
     position: relative;
     display: flex;
@@ -290,12 +286,12 @@
     border-radius: 6px;
     border: 1px solid #ecebf5;
     font-family: var(--font-adineue-pro);
-  
+
     > div:nth-child(1) {
       font-size: 12px;
       font-weight: 400;
     }
-  
+
     > div:nth-child(2) {
       position: absolute;
       right: 0;

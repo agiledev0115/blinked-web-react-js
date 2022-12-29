@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/landing/Logo.png';
+import bLinkedLogo from '../../assets/landing/bLinkedLogo.svg';
 import LogoFooter from '../../assets/landing/LogoFooter.png';
 import MainImage from '../../assets/landing/main-image.png';
 import Laptop from '../../assets/landing/Laptop.png';
@@ -23,7 +23,7 @@ export default function LandingPage() {
     return (
         <>
             <header>
-                <img src={Logo} />
+                <img src={bLinkedLogo} alt="bLinked Logo"/>
                 <nav className="nav">
                     <Dropdown alignRight>
                         <Dropdown.Toggle as={CustomToggle} id="dropdown-autoclose-true">
@@ -32,26 +32,26 @@ export default function LandingPage() {
                             </div>
                         </Dropdown.Toggle>
                         <Dropdown.Menu className="p-2">
-                            <Dropdown.Item className="drop-menu-item">
-                                <a href="#">About Us</a>
+                            <Dropdown.Item className="drop-menu-item" href="/#">
+                                About Us
                             </Dropdown.Item>
-                            <Dropdown.Item className="drop-menu-item">
-                                <a href="#">How It Works</a>
+                            <Dropdown.Item className="drop-menu-item" href="/#">
+                                How It Works
                             </Dropdown.Item>
-                            <Dropdown.Item className="drop-menu-item">
-                                <a href="#">FAQs</a>
+                            <Dropdown.Item className="drop-menu-item" href="/#">
+                                FAQs
                             </Dropdown.Item>
-                            <Dropdown.Item className="drop-menu-item">
-                                <a href="/login">Log In</a>
+                            <Dropdown.Item className="drop-menu-item" href="/login">
+                                Log In
                             </Dropdown.Item>
-                            <Dropdown.Item className="drop-menu-item">
-                                <a href="/auth/sign_up1">Sign up</a>
+                            <Dropdown.Item className="drop-menu-item" href="/auth/sign_up1">
+                                Sign up
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <a href="#">About Us</a>
-                    <a href="#">How It Works</a>
-                    <a href="#">FAQs</a>
+                    <a href="/#">About Us</a>
+                    <a href="/#">How It Works</a>
+                    <a href="/#">FAQs</a>
                     <a href="/login">Log In</a>
                     <button className="button" onClick={() => window.location.assign('/auth/sign_up1')}>Sign up</button>
                 </nav>
@@ -62,7 +62,7 @@ export default function LandingPage() {
                     <div className="first-col">
                         <h1 className="title">A market place<br /> for businesses</h1>
                         <p className='text'>We make the world of businesses much easier by helping businesses connect with one another.</p>
-                        <button className="button">Get Started</button>
+                        <button className="button" onClick={() => window.location.assign('/auth/sign_up1')}>Get Started</button>
                         <h2 className="title">Built for growth</h2>
                     </div>
                     <div className="second-col">
@@ -79,7 +79,9 @@ export default function LandingPage() {
                         <div className="first-col">
                             <p className='text'>Run your business on simple, useful modern tools and account services that help you get started and grow your business.</p>
                             <button className="button">Merchant</button>
+                            <span></span>
                             <button className="button">Service Providers</button>
+                            <span></span>
                             <button className="button">Customer</button>
                         </div>
                         <div className="second-col">
@@ -170,15 +172,15 @@ export default function LandingPage() {
                 </div>
                 <div>
                     <h4 className="subtitle">Company</h4>
-                    <a className='text' href="#">Home</a><br />
-                    <a className='text' href="#">Blogs</a><br />
-                    <a className='text' href="#">About</a><br />
-                    <a className='text' href="#">Carreers</a><br />
+                    <a className='text' href="/#">Home</a><br />
+                    <a className='text' href="/#">Blogs</a><br />
+                    <a className='text' href="/#">About</a><br />
+                    <a className='text' href="/#">Carreers</a><br />
                 </div>
                 <div>
                     <h4 className="subtitle">Legal</h4>
-                    <a className='text' href="#">Terms & Conditions</a><br />
-                    <a className='text' href="#">Privacy Policy</a><br />
+                    <a className='text' href="/#">Terms & Conditions</a><br />
+                    <a className='text' href="/#">Privacy Policy</a><br />
                 </div>
                 <div>
                     <h4 className="subtitle">Reach Us</h4>
@@ -189,10 +191,10 @@ export default function LandingPage() {
                 <div className='bottom'>
                     <p className="text">© 2020 Landify UI Kit. All rights reserved</p>
                     <div className='links'>
-                        <a className='text' href="#">Terms & Conditions</a>
-                        <a className='text' href="#">Privacy Policy</a>
-                        <a className='text' href="#">Sitemap</a>
-                        <a className='text' href="#">Disclaimer</a>
+                        <a className='text' href="/#">Terms & Conditions</a>
+                        <a className='text' href="/#">Privacy Policy</a>
+                        <a className='text' href="/#">Sitemap</a>
+                        <a className='text' href="/#">Disclaimer</a>
                     </div>
                 </div>
             </footer>

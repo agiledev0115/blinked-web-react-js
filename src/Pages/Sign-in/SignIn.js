@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import validator from "validator";
-import { logo, google, eye, hiddenEye, partical, partical2, partical3, partical4, partical5, loginVectorA, validemail } from "../../assets/img";
+import { google, eye, hiddenEye, partical, partical2, partical3, partical4, partical5, loginVectorA, validemail } from "../../assets/img";
+import bLinkedLogo from '../../assets/landing/bLinkedLogo.svg';
 import GoogleLogin from "react-google-login";
 import { gapi } from "gapi-script"
 
@@ -64,6 +65,10 @@ const SignInPage = () => {
         history.push("/home");
     };
 
+    const handleForgot = () => history.push("/auth/forgot_password");
+
+    const handleCreateAC = () => history.push("/auth/sign_up1");
+
     useEffect(() => {
         function start() {
           gapi.client.init({
@@ -95,16 +100,12 @@ const SignInPage = () => {
         console.log("Google Sing In ha fracasado intentelo denuevo mas tarde");
     };
 
-    const handleForgot = () => history.push("/auth/forgot_password");
-
-    const handleCreateAC = () => history.push("/auth/sign_up1");
-
     return (
         <div className="auth-main">
             <div className="row w-100">
                 <div className="col-lg-8 signin-comp-a">
                     <div className="d-flex justify-content-center">
-                        <img src={logo} alt="Logo" className="img-fluid my-5" />
+                        <img src={bLinkedLogo} alt="Logo" className="img-fluid" style={{maxHeight: '150px'}}/>
                     </div>
                     <div className="signin-title">Welcome back to bLinked, 👏🏽</div>
                     <div className="signin-subcontainer px-md-5 mt-5">

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { MdClose } from "react-icons/md";
 import { useHistory } from "react-router-dom";
-import { agentsMenu, feedbackMenu, homeMenu, logo, logoutMenu, orderMenu, settingMenu } from "../assets/img";
+import { agentsMenu, feedbackMenu, homeMenu, logoutMenu, orderMenu, settingMenu } from "../assets/img";
+import bLinkedLogo from '../assets/landing/bLinkedLogo.svg';
 
 const Sidebar = ({ activeSidebar, setActiveSidebar }) => {
     const [activeMenu, setActiveMenu] = useState("home");
@@ -27,7 +28,13 @@ const Sidebar = ({ activeSidebar, setActiveSidebar }) => {
         <div className={!activeSidebar ? "" : "sidebar-bg"}>
             <div className={!activeSidebar ? "sidebar-main" : "sidebar-main active"}>
                 <div className="mt-5 position-relative sidebar-logo" style={{ cursor: 'pointer' }}>
-                    <img src={logo} alt="" className="img-fluid" onClick={() => history.push("/home")} />
+                    <img
+                        src={bLinkedLogo}
+                        alt="Logo"
+                        className="img-fluid"
+                        style={{ margin: "-12rem 0", maxHeight: '150px' }}
+                        onClick={() => history.push("/home")}
+                    />
                     <div onClick={() => setActiveSidebar(!activeSidebar)} className="d-flex d-md-none">
                         <MdClose />
                     </div>

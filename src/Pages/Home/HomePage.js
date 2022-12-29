@@ -34,11 +34,10 @@ const HomePage = () => {
     const [fromDate, setFromDate] = useState(from)
     const [toDate, setToDate] = useState(new Date())
     const [orders, setOrders] = useState(order)
-    const [search, setSearch] = useState("")
+    const [search, setSearch] = useState("");
     const [status, setStatus] = useState("All")
     const [searchFromDate, setSearchFromDate] = useState(from)
     const [searchToDate, setSearchToDate] = useState(new Date())
-    // const []
 
     const handleSearch = (event) => {
         event.preventDefault();

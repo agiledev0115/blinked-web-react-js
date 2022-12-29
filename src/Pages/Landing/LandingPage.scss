@@ -52,7 +52,8 @@ header {
     }
     @media all and (max-width: 850px) {
         nav.nav {
-            a, .button {
+            a,
+            .button {
                 display: none;
             }
             .dropdown {
@@ -100,6 +101,10 @@ main {
             color: #3a42aa;
             margin-bottom: 20px;
         }
+        .title:last-child {
+            display: inline-block;
+            border-bottom: 12px solid #f0dac5;
+        }
         .text {
             font-size: 22px;
             line-height: 32px;
@@ -141,7 +146,7 @@ main {
             .second-col {
                 max-width: 40%;
                 .text {
-                    max-width: 90%
+                    max-width: 90%;
                 }
             }
         }
@@ -182,6 +187,9 @@ main {
     section.second-section {
         width: 100%;
         background: #3a42aa;
+        background-image: url("../../assets/landing/bLinked\ Pattern-17.svg");
+        background-position: center;
+        background-size: cover;
         padding: 64px 0 80px 140px;
         color: #fff;
         .title {
@@ -213,9 +221,23 @@ main {
                     line-height: 24px;
                     text-align: center;
                     padding: 14px 36px;
-                    margin-bottom: 55px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
                     display: block;
                     font-weight: 300;
+                }
+                .button:first-of-type{
+                    margin-top: 0;
+                }
+                span {
+                    display: inline-block;
+                    border: 1px solid #f0dac5;
+                    background-color: #f0dac5;
+                    margin-left: 62px;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    transform: rotate(-90deg);
+                    width: 35px;
                 }
             }
             .second-col {
@@ -236,11 +258,36 @@ main {
                     max-width: 100%;
                     .button {
                         display: inline;
-                        margin-right: 20px;
+                        margin-right: 15px;
+                    }
+                    span {
+                        transform: rotate(0);
+                        margin-right: 15px;
+                        margin-left: 0;
+                        margin-bottom: 5px;
                     }
                 }
                 .second-col {
                     justify-content: flex-start;
+                }
+            }
+        }
+        @media all and (max-width: 800px) {
+            .col-row {
+                .first-col {
+                    .button {
+                        display: block
+                    }
+                    span {
+                        display: inline-block;
+                        border: 1px solid #f0dac5;
+                        background-color: #f0dac5;
+                        margin-left: 62px;
+                        margin-bottom: 10px;
+                        margin-top: 20px;
+                        transform: rotate(-90deg);
+                        width: 35px;
+                    }
                 }
             }
         }
@@ -435,7 +482,7 @@ main {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+
             .content {
                 padding-left: 130px;
                 .title {
@@ -513,7 +560,7 @@ main {
                 }
             }
         }
-        @media all and (max-width: 600px){
+        @media all and (max-width: 600px) {
             padding: 88px 0px 64px;
             .background {
                 .image {

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useHistory } from "react-router";
 import validator from "validator";
 // Assets
-import { logo, validemail } from "../../assets/img";
+import { validemail } from "../../assets/img";
+import bLinkedLogo from '../../assets/landing/bLinkedLogo.svg';
 // Components
 import Footer from "../../Components/Footer";
 
@@ -65,7 +66,7 @@ const SignUpPage2 = () => {
     return (
         <div className="auth-main">
             <div className="container auth-cmn-main">
-                <img src={logo} alt="Logo" className="img-fluid my-5" />
+                <img src={bLinkedLogo} alt="Logo" className="img-fluid" style={{maxHeight: '150px'}} />
                 <div className="auth-cmn-subcontainer px-md-5 py-5">
                     <div className="auth-cmn-title">It's time to Grow your Business,</div>
                     <div className="auth-cmn-subtitle">
